@@ -112,44 +112,6 @@ export default {
     setInterval(flicker, 4000);
 
 
-    /*
-    window.onLoad = Prep();
-
-        var window_Height;
-        var window_Width;
-        
-        var image_Element;
-        var image_Height;
-        var image_Width;
-        
-        var availSpace_V;
-        var availSpace_H;
-
-
-    function Prep(){
-        window_Height = window.innerHeight;
-        window_Width = window.innerWidth;
-        
-        image_Element = document.getElementById("random-img");
-        image_Height = image_Element.clientHeight;
-        image_Width = image_Element.clientWidth;
-        
-        availSpace_V = window_Height - image_Height;
-        availSpace_H = window_Width - image_Width;
-        
-        var changeInterval = 3500;
-        setInterval(moveImage, changeInterval);
-    }
-    
-    function moveImage(){
-        var randNum_V = Math.round(Math.random() * availSpace_V);
-        var randNum_H = Math.round(Math.random() * availSpace_H);
-        
-        image_Element.style.top = randNum_V + "px";
-        image_Element.style.left = randNum_H + "px";        
-    }
-
-    */
 
 
   },
