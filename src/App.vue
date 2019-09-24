@@ -25,12 +25,12 @@
 
       <p class="page-info">
         <span class="shanghai">上海</span><br>
+        .////////////////////////////<br>
         ARTIST: ARNO<br>
         TRACK: SIREN<br>
         3D: <a href="https://www.instagram.com/joli_gillet/" target="_blank">JOLI_GILLET</a><br>
         CODE: <a href="https://www.instagram.com/special.gee/" target="_blank">SPECIAL.GEE</a><br>
-        .////////////////////////////<br>
-        <a href="SIREN.wav" class="download-link" download>DOWNLOAD</a><br>
+        <!--<a href="SIREN.rar" class="download-link" download>DOWNLOAD</a>-->
         .////////////////////////////
       </p>
 
