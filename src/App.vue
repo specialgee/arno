@@ -269,17 +269,17 @@ a:link, a:visited {
 
 .img-logo {
   position: absolute;
-  width: 10vw;
-  height: 5vh;
-  left: 1%;
+  width: 8vw;
+  height: 7vh;
+  left: 2%;
   bottom: 7%;
 }
 
 .img-cd {
   position: absolute;
-  width: 8vw;
+  width: 6vw;
   height: 8vh;
-  left: 15%;
+  left: 14%;
   bottom: 7%;
 }
 
@@ -293,7 +293,7 @@ a:link, a:visited {
   position: absolute;
   font-size: 16vw;
   top: 0px;
-  left: 0px;
+  left: 1%;
   margin: 0 auto;
   color: rgba(0,0,0,0);
   -webkit-text-stroke: 3px #fc7a78;
@@ -303,7 +303,7 @@ a:link, a:visited {
   position: absolute;
   font-size: 10vw;
   bottom: 5%;
-  right: 0px;
+  right: 2%;
   margin: 0 auto;
   color: rgba(0,0,0,0);
   -webkit-text-stroke: 3px #fc7a78;
@@ -369,7 +369,7 @@ a:link, a:visited {
 
   .img-logo {
     position: absolute;
-    width: 10vw;
+    width: 8vw;
     height: 5vh;
     left: 5%;
     bottom: 7%;
@@ -377,9 +377,9 @@ a:link, a:visited {
 
   .img-cd {
     position: absolute;
-    width: 10vw;
+    width: 6vw;
     height: 8vh;
-    left: 20%;
+    left: 15%;
     bottom: 7%;
   }
 
@@ -396,8 +396,8 @@ a:link, a:visited {
   .track-title {
     position: absolute;
     font-size: 10vw;
-    bottom: 2%;
-    right: 0px;
+    bottom: 5%;
+    right: 3%;
     margin: 0 auto;
     color: rgba(0,0,0,0);
     -webkit-text-stroke: 2px #fc7a78;
@@ -415,6 +415,12 @@ a:link, a:visited {
 
   .shanghai {
     font-size:8vw;
+  }
+
+  #footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
   }
 }
 
@@ -452,7 +458,7 @@ a:link, a:visited {
 
   .img-logo {
     position: absolute;
-    width: 10vw;
+    width: 12vw;
     height: 5vh;
     left: 5%;
     bottom: 7%;
@@ -460,9 +466,9 @@ a:link, a:visited {
 
   .img-cd {
     position: absolute;
-    width: 10vw;
+    width: 12vw;
     height: 8vh;
-    left: 20%;
+    left: 22%;
     bottom: 7%;
   }
 
@@ -480,7 +486,7 @@ a:link, a:visited {
     position: absolute;
     font-size: 10vw;
     bottom: 5%;
-    right: 3%;
+    right: 4%;
     margin: 0 auto;
     color: rgba(0,0,0,0);
     -webkit-text-stroke: 2px #fc7a78;
@@ -491,7 +497,7 @@ a:link, a:visited {
     text-align: left;
     font-size: 9px;
     letter-spacing: 4px;
-    left: 5%;
+    left: 6%;
     bottom: 18%;
     color: rgba(255,255,255,0.8);
   }
@@ -502,7 +508,7 @@ a:link, a:visited {
 
   .download-link {
     position: relative;
-    left: 10vw;
+    left: 5vw;
     font-size: 5vw;
   }
 
