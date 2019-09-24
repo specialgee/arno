@@ -1,13 +1,6 @@
 <template>
   <div id="app">
     <!--<HelloWorld msg="Welcome to Your Vue.js App" />-->
-
-    <audio id="audio-track" loop>
-      <source src="./assets/audio/SIREN.mp3" type="audio/mpeg">
-      <source src="./assets/audio/SIREN.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-
     <div id="cover" class="show">
       <div class="cover-overlay"></div>
       <img class="cover-play" alt="play" src="./assets/img/rose.gif"/>
@@ -55,17 +48,27 @@ export default {
     //HelloWorld
   },
   mounted () {
-    var audio = document.getElementById("audio-track");
+    var sound = new Howl({
+      src: ["SIREN.mp3", "SIREN.ogg"],
+      loop: true
+    });
+
+    var isSoundLoaded = false;
+
+    // Clear listener after first call.
+    sound.once('load', function(){
+      isSoundLoaded = true;
+    });
 
     $('#cover').click(function() {
-      if (audio.readyState > 1) {
+      if (isSoundLoaded) {
         $(this).removeClass("show");
         $(this).addClass("hide");
 
         $("#container").removeClass("hide");
         $("#container").addClass("show");
-
-        audio.play();
+        
+        sound.play();
       }
     });
 
@@ -76,7 +79,7 @@ export default {
       $("#cover").removeClass("hide");
       $("#cover").addClass("show");
 
-      audio.pause();
+      sound.pause();
     });
 
 
