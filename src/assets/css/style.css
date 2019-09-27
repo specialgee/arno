@@ -1,0 +1,365 @@
+@font-face {
+    font-family: Hanson;
+    src: url(/src/assets/font/Hanson-Bold.ttf);
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+      -webkit-text-stroke: 2px #1dffff;
+    }
+  }
+  
+  .blink-fast {
+    animation: blinker 80ms linear infinite;
+  }
+  
+  .blink-slow {
+    animation: blinker 6s linear infinite;
+  }
+  
+  body {
+    font-family: Hanson, sans-serif;
+    background: #000;
+    margin: 0 auto;
+    overflow: -moz-scrollbars-none;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  body::-webkit-scrollbar { width: 0 !important }
+  
+  :focus {
+    outline: 0;
+    background: rgb(0, 0, 0, 0);
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  a:link, a:visited {
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .download-link {
+    position: relative;
+    left: 1vw;
+    font-size: 1.5vw;
+  }
+  
+  #app {
+    font-family: Hanson, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+  }
+  
+  #cover {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .cover-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .cover-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    height: 480px;
+    max-width: 100%;  margin: 0 auto;
+    margin-left: -240px;
+    margin-top: -240px;
+  }
+  
+  .show {
+    visibility: visible;
+    display: block;
+  }
+  
+  .hide {
+    visibility: hidden;
+    display: none;
+  }
+  
+  .img-sheitan {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  
+  .img-logo {
+    position: absolute;
+    width: 8vw;
+    height: 7vh;
+    left: 2%;
+    bottom: 7%;
+  }
+  
+  .img-cd {
+    position: absolute;
+    width: 6vw;
+    height: 8vh;
+    left: 14%;
+    bottom: 7%;
+  }
+  
+  .img-move {
+    position: absolute;
+    max-width: 400px;
+    max-height: 400px;
+  }
+  
+  .page-title {
+    position: absolute;
+    font-size: 16vw;
+    top: 0px;
+    left: 1%;
+    margin: 0 auto;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 3px #fc7a78;
+  }
+  
+  .track-title {
+    position: absolute;
+    font-size: 10vw;
+    bottom: 5%;
+    right: 2%;
+    margin: 0 auto;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 3px #fc7a78;
+  }
+  
+  .page-info {
+    position: absolute;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 4px;
+    left: 1%;
+    bottom: 20%;
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .shanghai {
+    font-size:10vw;
+  }
+  
+  #footer {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+  }
+  
+  #copyright {
+    font-size: 8px;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,0.8);
+  }
+  
+  @media (max-width: 768px) {
+    #cover {
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .cover-overlay {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      background-color: rgba(0,0,0,0.7);
+    }
+  
+    .cover-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 240px;
+      height: 240px;
+      max-width: 100%; 
+      margin: 0 auto;
+      margin-left: -120px;
+      margin-top: -120px;
+    }
+  
+    .img-sheitan {
+      width: 95vw;
+      height: 90vh;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+  
+    .img-logo {
+      position: absolute;
+      width: 8vw;
+      height: 5vh;
+      left: 5%;
+      bottom: 7%;
+    }
+  
+    .img-cd {
+      position: absolute;
+      width: 6vw;
+      height: 8vh;
+      left: 15%;
+      bottom: 7%;
+    }
+  
+    .page-title {
+      position: absolute;
+      font-size: 16vw;
+      top: 5%;
+      left: 3%;
+      margin: 0 auto;
+      color: rgba(0,0,0,0);
+      -webkit-text-stroke: 2px #fc7a78;
+    }
+  
+    .track-title {
+      position: absolute;
+      font-size: 10vw;
+      bottom: 5%;
+      right: 3%;
+      margin: 0 auto;
+      color: rgba(0,0,0,0);
+      -webkit-text-stroke: 2px #fc7a78;
+    }
+  
+    .page-info {
+      position: absolute;
+      text-align: left;
+      font-size: 9px;
+      letter-spacing: 4px;
+      left: 5%;
+      bottom: 18%;
+      color: rgba(255,255,255,0.8);
+    }
+  
+    .shanghai {
+      font-size:8vw;
+    }
+  
+    #footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #cover {
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .cover-overlay {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      background-color: rgba(0,0,0,0.7);
+    }
+  
+    .cover-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 240px;
+      height: 240px;
+      max-width: 100%; 
+      margin: 0 auto;
+      margin-left: -120px;
+      margin-top: -120px;
+    }
+  
+    .img-sheitan {
+      width: 95vw;
+      height: 80vh;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+  
+    .img-logo {
+      position: absolute;
+      width: 12vw;
+      height: 5vh;
+      left: 5%;
+      bottom: 7%;
+    }
+  
+    .img-cd {
+      position: absolute;
+      width: 12vw;
+      height: 8vh;
+      left: 22%;
+      bottom: 7%;
+    }
+  
+    .page-title {
+      position: absolute;
+      font-size: 16vw;
+      top: 5%;
+      left: 3%;
+      margin: 0 auto;
+      color: rgba(0,0,0,0);
+      -webkit-text-stroke: 2px #fc7a78;
+    }
+  
+    .track-title {
+      position: absolute;
+      font-size: 10vw;
+      bottom: 5%;
+      right: 4%;
+      margin: 0 auto;
+      color: rgba(0,0,0,0);
+      -webkit-text-stroke: 2px #fc7a78;
+    }
+  
+    .page-info {
+      position: absolute;
+      text-align: left;
+      font-size: 9px;
+      letter-spacing: 4px;
+      left: 6%;
+      bottom: 18%;
+      color: rgba(255,255,255,0.8);
+    }
+  
+    .shanghai {
+      font-size:20vw;
+    }
+  
+    .download-link {
+      position: relative;
+      left: 5vw;
+      font-size: 5vw;
+    }
+  
+    #footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0%;
+    }
+  
+    #copyright {
+      font-size: 6px;
+      letter-spacing: 4px;
+      color: rgba(255,255,255,0.8);
+    }
+  }
